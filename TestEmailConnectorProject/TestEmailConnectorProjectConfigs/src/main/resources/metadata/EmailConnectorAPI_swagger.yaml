@@ -1,0 +1,38 @@
+openapi: 3.0.1
+info:
+  title: EmailConnectorAPI
+  description: API Definition of EmailConnectorAPI
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/emailconnector
+paths:
+  /send:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /retrieve:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
